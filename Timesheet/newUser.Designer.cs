@@ -39,12 +39,14 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtConfirmpswrd = new System.Windows.Forms.TextBox();
+            this.btnSaveUser = new System.Windows.Forms.Button();
+            this.btnCancelUser = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblname
             // 
             this.lblname.AutoSize = true;
-            this.lblname.Location = new System.Drawing.Point(3, 0);
+            this.lblname.Location = new System.Drawing.Point(33, 0);
             this.lblname.Name = "lblname";
             this.lblname.Size = new System.Drawing.Size(38, 13);
             this.lblname.TabIndex = 0;
@@ -53,7 +55,7 @@
             // lblLastname
             // 
             this.lblLastname.AutoSize = true;
-            this.lblLastname.Location = new System.Drawing.Point(0, 39);
+            this.lblLastname.Location = new System.Drawing.Point(33, 39);
             this.lblLastname.Name = "lblLastname";
             this.lblLastname.Size = new System.Drawing.Size(56, 13);
             this.lblLastname.TabIndex = 1;
@@ -70,7 +72,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(0, 78);
+            this.label4.Location = new System.Drawing.Point(33, 78);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 1;
@@ -79,7 +81,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(0, 117);
+            this.label5.Location = new System.Drawing.Point(33, 117);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 13);
             this.label5.TabIndex = 1;
@@ -88,7 +90,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 156);
+            this.label1.Location = new System.Drawing.Point(33, 156);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 13);
             this.label1.TabIndex = 1;
@@ -96,43 +98,65 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(3, 16);
+            this.txtName.Location = new System.Drawing.Point(36, 16);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.Size = new System.Drawing.Size(120, 20);
             this.txtName.TabIndex = 2;
             // 
             // txtLastname
             // 
-            this.txtLastname.Location = new System.Drawing.Point(0, 55);
+            this.txtLastname.Location = new System.Drawing.Point(36, 55);
             this.txtLastname.Name = "txtLastname";
-            this.txtLastname.Size = new System.Drawing.Size(100, 20);
+            this.txtLastname.Size = new System.Drawing.Size(120, 20);
             this.txtLastname.TabIndex = 2;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(0, 94);
+            this.txtEmail.Location = new System.Drawing.Point(36, 94);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.Size = new System.Drawing.Size(120, 20);
             this.txtEmail.TabIndex = 2;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(0, 133);
+            this.txtPassword.Location = new System.Drawing.Point(36, 133);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(100, 20);
+            this.txtPassword.Size = new System.Drawing.Size(120, 20);
             this.txtPassword.TabIndex = 2;
             // 
             // txtConfirmpswrd
             // 
-            this.txtConfirmpswrd.Location = new System.Drawing.Point(0, 172);
+            this.txtConfirmpswrd.Location = new System.Drawing.Point(36, 172);
             this.txtConfirmpswrd.Name = "txtConfirmpswrd";
-            this.txtConfirmpswrd.Size = new System.Drawing.Size(100, 20);
+            this.txtConfirmpswrd.Size = new System.Drawing.Size(120, 20);
             this.txtConfirmpswrd.TabIndex = 2;
+            // 
+            // btnSaveUser
+            // 
+            this.btnSaveUser.Location = new System.Drawing.Point(36, 198);
+            this.btnSaveUser.Name = "btnSaveUser";
+            this.btnSaveUser.Size = new System.Drawing.Size(57, 23);
+            this.btnSaveUser.TabIndex = 3;
+            this.btnSaveUser.Text = "Save";
+            this.btnSaveUser.UseVisualStyleBackColor = true;
+            this.btnSaveUser.Click += new System.EventHandler(this.btnSaveUser_Click);
+            // 
+            // btnCancelUser
+            // 
+            this.btnCancelUser.Location = new System.Drawing.Point(99, 198);
+            this.btnCancelUser.Name = "btnCancelUser";
+            this.btnCancelUser.Size = new System.Drawing.Size(57, 23);
+            this.btnCancelUser.TabIndex = 3;
+            this.btnCancelUser.Text = "Cancel";
+            this.btnCancelUser.UseVisualStyleBackColor = true;
+           
             // 
             // newUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnCancelUser);
+            this.Controls.Add(this.btnSaveUser);
             this.Controls.Add(this.txtConfirmpswrd);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtEmail);
@@ -145,7 +169,8 @@
             this.Controls.Add(this.lblLastname);
             this.Controls.Add(this.lblname);
             this.Name = "newUser";
-            this.Size = new System.Drawing.Size(359, 431);
+            this.Size = new System.Drawing.Size(202, 281);
+            this.Load += new System.EventHandler(this.newUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,5 +189,7 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtConfirmpswrd;
+        private System.Windows.Forms.Button btnSaveUser;
+        private System.Windows.Forms.Button btnCancelUser;
     }
 }

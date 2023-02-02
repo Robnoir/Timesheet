@@ -31,8 +31,6 @@
             this.workerName = new System.Windows.Forms.Label();
             this.txt_workerLastname = new System.Windows.Forms.Label();
             this.txt_address = new System.Windows.Forms.Label();
-            this.persNummer = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -69,23 +67,6 @@
             this.txt_address.Size = new System.Drawing.Size(70, 16);
             this.txt_address.TabIndex = 4;
             this.txt_address.Text = "Datum Till:";
-            // 
-            // persNummer
-            // 
-            this.persNummer.AutoSize = true;
-            this.persNummer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.persNummer.Location = new System.Drawing.Point(-3, 141);
-            this.persNummer.Name = "persNummer";
-            this.persNummer.Size = new System.Drawing.Size(107, 16);
-            this.persNummer.TabIndex = 6;
-            this.persNummer.Text = "Person Nummer:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(0, 157);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 7;
             // 
             // button2
             // 
@@ -134,8 +115,6 @@
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.persNummer);
             this.Controls.Add(this.txt_address);
             this.Controls.Add(this.txt_workerLastname);
             this.Controls.Add(this.workerName);
@@ -151,8 +130,6 @@
         private System.Windows.Forms.Label workerName;
         private System.Windows.Forms.Label txt_workerLastname;
         private System.Windows.Forms.Label txt_address;
-        private System.Windows.Forms.Label persNummer;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;

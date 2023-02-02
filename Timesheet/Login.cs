@@ -21,5 +21,15 @@ namespace Timesheet
         {
 
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNewUser_Click(object sender, EventArgs e)
+        {
+            newUser1.Visible = true;
+        }
     }
 }

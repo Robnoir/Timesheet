@@ -175,6 +175,7 @@
             this.timeReport1.Name = "timeReport1";
             this.timeReport1.Size = new System.Drawing.Size(788, 460);
             this.timeReport1.TabIndex = 3;
+            this.timeReport1.Visible = false;
             // 
             // registration1
             // 

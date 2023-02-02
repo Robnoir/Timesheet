@@ -15,6 +15,31 @@ namespace Timesheet
         public newUser()
         {
             InitializeComponent();
+            txtPassword.PasswordChar= '*';
+            txtConfirmpswrd.PasswordChar= '*';
         }
+
+        private void newUser_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSaveUser_Click(object sender, EventArgs e)
+        {
+            string input1 = txtPassword.Text;
+            string input2 = txtConfirmpswrd.Text;
+
+            if (input1 == input2)
+            {
+                MessageBox.Show("Signup Complete");
+            }
+            else
+            {
+                MessageBox.Show("Passwords dont match");
+
+            }
+        }
+
+   
     }
 }
