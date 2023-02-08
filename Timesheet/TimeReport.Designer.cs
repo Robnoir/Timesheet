@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnSave = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.workDate = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -46,13 +46,13 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dateTimePicker1
+            // workDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(0, 88);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 2;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.workDate.Location = new System.Drawing.Point(0, 88);
+            this.workDate.Name = "workDate";
+            this.workDate.Size = new System.Drawing.Size(200, 20);
+            this.workDate.TabIndex = 2;
+            this.workDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label1
             // 
@@ -68,9 +68,9 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Dag 07.00 -15.00",
-            "kväll 15.30 - 00.00",
-            "Natt 00.30 - 06.30"});
+            "Dag ",
+            "kväll ",
+            "Natt "});
             this.comboBox1.Location = new System.Drawing.Point(0, 54);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
@@ -94,7 +94,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.workDate);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSave);
             this.Name = "TimeReport";
@@ -106,7 +106,7 @@
 
         #endregion
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker workDate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btnUpdate;
