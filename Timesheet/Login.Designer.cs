@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtloginUser = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtloginPswrd = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnNewUser = new System.Windows.Forms.Button();
@@ -48,12 +48,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Username";
             // 
-            // textBox1
+            // txtloginUser
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtloginUser.Location = new System.Drawing.Point(12, 28);
+            this.txtloginUser.Name = "txtloginUser";
+            this.txtloginUser.Size = new System.Drawing.Size(158, 20);
+            this.txtloginUser.TabIndex = 1;
+            this.txtloginUser.TextChanged += new System.EventHandler(this.txt_loginUser_TextChanged);
             // 
             // label2
             // 
@@ -65,13 +66,12 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Password";
             // 
-            // textBox2
+            // txtloginPswrd
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 70);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(160, 20);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtloginPswrd.Location = new System.Drawing.Point(12, 70);
+            this.txtloginPswrd.Name = "txtloginPswrd";
+            this.txtloginPswrd.Size = new System.Drawing.Size(160, 20);
+            this.txtloginPswrd.TabIndex = 1;
             // 
             // btnLogin
             // 
@@ -93,7 +93,7 @@
             // 
             // btnNewUser
             // 
-            this.btnNewUser.Location = new System.Drawing.Point(12, 125);
+            this.btnNewUser.Location = new System.Drawing.Point(14, 125);
             this.btnNewUser.Name = "btnNewUser";
             this.btnNewUser.Size = new System.Drawing.Size(160, 23);
             this.btnNewUser.TabIndex = 3;
@@ -118,8 +118,8 @@
             this.Controls.Add(this.btnNewUser);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtloginPswrd);
+            this.Controls.Add(this.txtloginUser);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Login";
@@ -133,9 +133,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtloginUser;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtloginPswrd;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnNewUser;

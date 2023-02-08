@@ -35,6 +35,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnCancelregistration = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // workerName
@@ -107,6 +108,18 @@
             this.comboBox1.TabIndex = 11;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // btnCancelregistration
+            // 
+            this.btnCancelregistration.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnCancelregistration.ForeColor = System.Drawing.Color.White;
+            this.btnCancelregistration.Location = new System.Drawing.Point(100, 200);
+            this.btnCancelregistration.Name = "btnCancelregistration";
+            this.btnCancelregistration.Size = new System.Drawing.Size(100, 42);
+            this.btnCancelregistration.TabIndex = 9;
+            this.btnCancelregistration.Text = "Cancel";
+            this.btnCancelregistration.UseVisualStyleBackColor = false;
+            this.btnCancelregistration.Click += new System.EventHandler(this.button2_Click);
+            // 
             // registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -114,6 +127,7 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btnCancelregistration);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txt_address);
             this.Controls.Add(this.txt_workerLastname);
@@ -134,5 +148,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnCancelregistration;
     }
 }

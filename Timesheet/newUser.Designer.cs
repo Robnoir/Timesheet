@@ -38,7 +38,7 @@
             this.txtLastname = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtConfirmpswrd = new System.Windows.Forms.TextBox();
+            this.txtConfirmPswrd = new System.Windows.Forms.TextBox();
             this.btnSaveUser = new System.Windows.Forms.Button();
             this.btnCancelUser = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -123,13 +123,15 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(120, 20);
             this.txtPassword.TabIndex = 2;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
-            // txtConfirmpswrd
+            // txtConfirmPswrd
             // 
-            this.txtConfirmpswrd.Location = new System.Drawing.Point(36, 172);
-            this.txtConfirmpswrd.Name = "txtConfirmpswrd";
-            this.txtConfirmpswrd.Size = new System.Drawing.Size(120, 20);
-            this.txtConfirmpswrd.TabIndex = 2;
+            this.txtConfirmPswrd.Location = new System.Drawing.Point(36, 172);
+            this.txtConfirmPswrd.Name = "txtConfirmPswrd";
+            this.txtConfirmPswrd.Size = new System.Drawing.Size(120, 20);
+            this.txtConfirmPswrd.TabIndex = 2;
+            this.txtConfirmPswrd.TextChanged += new System.EventHandler(this.txtConfirmPswrd_TextChanged);
             // 
             // btnSaveUser
             // 
@@ -149,7 +151,6 @@
             this.btnCancelUser.TabIndex = 3;
             this.btnCancelUser.Text = "Cancel";
             this.btnCancelUser.UseVisualStyleBackColor = true;
-           
             // 
             // newUser
             // 
@@ -157,7 +158,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnCancelUser);
             this.Controls.Add(this.btnSaveUser);
-            this.Controls.Add(this.txtConfirmpswrd);
+            this.Controls.Add(this.txtConfirmPswrd);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtLastname);
@@ -188,7 +189,7 @@
         private System.Windows.Forms.TextBox txtLastname;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtConfirmpswrd;
+        private System.Windows.Forms.TextBox txtConfirmPswrd;
         private System.Windows.Forms.Button btnSaveUser;
         private System.Windows.Forms.Button btnCancelUser;
     }
