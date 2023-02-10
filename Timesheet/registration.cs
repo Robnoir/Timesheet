@@ -63,7 +63,7 @@ namespace Timesheet
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            SaveAvailable();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

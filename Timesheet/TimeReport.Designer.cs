@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.btnSave = new System.Windows.Forms.Button();
-            this.workDate = new System.Windows.Forms.DateTimePicker();
+            this.datetimepicker = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.shiftPick = new System.Windows.Forms.ComboBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -46,13 +46,13 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.button1_Click);
             // 
-            // workDate
+            // datetimepicker
             // 
-            this.workDate.Location = new System.Drawing.Point(0, 88);
-            this.workDate.Name = "workDate";
-            this.workDate.Size = new System.Drawing.Size(200, 20);
-            this.workDate.TabIndex = 2;
-            this.workDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.datetimepicker.Location = new System.Drawing.Point(0, 88);
+            this.datetimepicker.Name = "datetimepicker";
+            this.datetimepicker.Size = new System.Drawing.Size(200, 20);
+            this.datetimepicker.TabIndex = 2;
+            this.datetimepicker.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label1
             // 
@@ -64,18 +64,18 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Pass:";
             // 
-            // comboBox1
+            // shiftPick
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.shiftPick.FormattingEnabled = true;
+            this.shiftPick.Items.AddRange(new object[] {
             "Dag ",
             "kväll ",
             "Natt "});
-            this.comboBox1.Location = new System.Drawing.Point(0, 54);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.shiftPick.Location = new System.Drawing.Point(0, 54);
+            this.shiftPick.Name = "shiftPick";
+            this.shiftPick.Size = new System.Drawing.Size(121, 21);
+            this.shiftPick.TabIndex = 4;
+            this.shiftPick.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnUpdate
             // 
@@ -92,9 +92,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.shiftPick);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.workDate);
+            this.Controls.Add(this.datetimepicker);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSave);
             this.Name = "TimeReport";
@@ -106,9 +106,9 @@
 
         #endregion
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.DateTimePicker workDate;
+        private System.Windows.Forms.DateTimePicker datetimepicker;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox shiftPick;
         private System.Windows.Forms.Button btnUpdate;
     }
 }
